@@ -95,8 +95,7 @@ The analysis follows the complete machine learning cycle:
 
 ### Phase 3: Evaluation
 
-7. **Cluster Evaluation** - Calculate metrics and visualize clusters
-8. **Cluster Interpretation** - Analyze cluster characteristics and clinical insights
+7. **Cluster Evaluation** - Calculate metrics (Silhouette Score, Davies-Bouldin Index, Calinski-Harabasz Index) and visualize cluster quality
 
 ## Technologies Used
 
@@ -106,12 +105,15 @@ The analysis follows the complete machine learning cycle:
 - **Machine Learning**: scikit-learn
 - **Environment**: Jupyter Notebook
 
-## Expected Outcomes
+## Key Results
 
-- Identification of distinct patient groups based on cardiovascular risk factors
-- Insights into feature patterns within each cluster
-- Visual representations of cluster separations
-- Clinical interpretations of cluster characteristics
+- **Optimal Clusters**: 6 distinct patient groups identified
+- **Cluster Quality**: Evaluated using multiple metrics
+  - Silhouette Score: Measures sample-to-cluster fit
+  - Davies-Bouldin Index: Assesses cluster separation
+  - Calinski-Harabasz Index: Evaluates cluster density and separation
+- **Visualizations**: Comprehensive plots including cluster distributions, silhouette plots, and metric comparisons
+- **Clinical Insights**: Clusters reveal patterns in chest pain types, ECG responses, and cardiovascular risk profiles
 
 ## Contributors
 
